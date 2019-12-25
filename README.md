@@ -65,3 +65,19 @@ Most of the advantages described in [this article](https://blog.gruntwork.io/ter
 
 [Here](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example)
 [Documentation](https://terragrunt.gruntwork.io/)
+
+## Commands
+
+<!-- START makefile-doc -->
+```
+$ make help 
+setup                          Setup dependencies
+hooks                          install pre commit.
+validate                       Validate files with pre-commit hooks
+changelog                      Update changelog
+release                        Create release version
+create                         Deploy multiple Terraform modules in a single command
+destroy                        Undeploy all the Terraform modules
+kubeconfig                     Pull kubeconfig credentials for the cluster 
+```
+<!-- END makefile-doc -->

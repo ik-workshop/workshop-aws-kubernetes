@@ -20,11 +20,11 @@ changelog: ## Update changelog
 release: ## Create release version
 	@semtag final -s minor
 
-create: ## Create infrastructure
+create: ## Deploy multiple Terraform modules in a single command
 	@cd master/us-east-1
 	@terragrunt apply-all
 
-destroy: ## Destroy infrastructure
+destroy: ## Undeploy all the Terraform modules
 	@bin/test.sh
 
 kubeconfig: ## Pull kubeconfig credentials for the cluster
