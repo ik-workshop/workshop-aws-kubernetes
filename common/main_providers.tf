@@ -13,10 +13,6 @@ terraform {
   required_version = ">= 0.12"
 
   required_providers {
-    aws      = ">= 2.43"
-    random   = ">= 2.2"
-    local    = ">= 1.4"
-    null     = ">= 2.1"
-    template = ">= 2.1"
+    aws = ">= 2.43"
   }
 }

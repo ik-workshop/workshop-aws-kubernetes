@@ -66,6 +66,10 @@ Most of the advantages described in [this article](https://blog.gruntwork.io/ter
 [Here](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example)
 [Documentation](https://terragrunt.gruntwork.io/)
 
+> What is the thumbprint for `us-east-1` region?
+
+`9e99a48a9960b14926bb7f3b02e22da2b0ab7280`
+
 ## Commands
 
 <!-- START makefile-doc -->
