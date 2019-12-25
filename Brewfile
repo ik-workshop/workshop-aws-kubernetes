@@ -15,4 +15,6 @@ if OS.mac?
   brew "kubernetes-cli"
   # Thin wrapper for Terraform e.g. for locking state
   brew "terragrunt"
+  # Use AWS IAM credentials to authenticate to Kubernetes
+  brew "aws-iam-authenticator"
 end

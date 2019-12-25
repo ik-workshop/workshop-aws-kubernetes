@@ -19,3 +19,13 @@ changelog: ## Update changelog
 
 release: ## Create release version
 	@semtag final -s minor
+
+create: ## Create infrastructure
+	@cd master/us-east-1
+	@terragrunt apply-all
+
+destroy: ## Destroy infrastructure
+	@bin/test.sh
+
+kubeconfig: ## Pull kubeconfig credentials for the cluster
+	@aws eks update-kubeconfig --name "workshop"

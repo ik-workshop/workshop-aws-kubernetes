@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "${var.aws_region}"
+  region = var.aws_region
 
   # Make it faster by skipping something
   skip_get_ec2_platforms      = true
@@ -14,5 +14,9 @@ terraform {
 
   required_providers {
     aws      = ">= 2.43"
+    random   = ">= 2.2"
+    local    = ">= 1.4"
+    null     = ">= 2.1"
+    template = ">= 2.1"
   }
 }

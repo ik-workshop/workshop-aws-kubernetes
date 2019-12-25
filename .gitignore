@@ -51,3 +51,16 @@ override.tf.json
 
 master/**/main_providers.tf
 master/**/main_variables.tf
+# Except original (see related issue - https://github.com/gruntwork-io/terragrunt/issues/785)
+!common/main_providers.tf
+
+# Secrets are not allowed in general
+*.key
+*.pem
+
+# Secrets are encrypted using git-crypt
+!secrets/*
+
+# OS X
+.history
+.DS_Store
