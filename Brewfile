@@ -5,4 +5,14 @@ if OS.mac?
   brew "shellcheck"
   # Secure your credentials in environment variables
   brew "envchain"
+  # Load/unload environment variables based on $PWD
+  brew "direnv"
+  # Tool that can switch between kubectl contexts easily and create aliases
+  brew "kubectx"
+  # Terraform switcher
+  brew "tfswitch"
+  # Kubernetes command-line interface.
+  brew "kubernetes-cli"
+  # Thin wrapper for Terraform e.g. for locking state
+  brew "terragrunt"
 end
