@@ -18,6 +18,6 @@ output "openid_connect_provider_uri" {
 }
 
 output "thumbprint" {
-  value       = data.external.thumbprint.result.thumbprint
-  description = "A server certificate thumbprints for the OpenID Connect (OIDC) identity provider's server certificate(s)."
+  value       = var.oidc_root_ca_thumbprint
+  description = "A server certificate thumbprints for the OpenID Connect identity provider's server certificate."
 }

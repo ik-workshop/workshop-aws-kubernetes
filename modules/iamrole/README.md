@@ -21,5 +21,6 @@ to the AWS Resources.
 | Name | Description |
 |------|-------------|
 | pod\_identity\_role\_arn | The Amazon Resource Name \(ARN\) specifying the role. |
+| service\_account\_name |  |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

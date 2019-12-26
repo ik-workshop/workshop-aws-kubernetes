@@ -13,8 +13,20 @@ resource aws_iam_role pod_identity {
   }
 }
 
-resource aws_iam_role_policy jpod_identity {
+resource aws_iam_role_policy pod_identity {
   name   = "s3-access"
   role   = aws_iam_role.pod_identity.id
   policy = file("${path.module}/templates/s3.json")
+}
+
+resource kubernetes_service_account pod_identity {
+  metadata {
+    name      = "pod-iam-identity"
+    namespace = "default"
+    annotations = {
+      "eks.amazonaws.com/role-arn" = aws_iam_role.pod_identity.arn
+    }
+  }
+
+  automount_service_account_token = true
 }

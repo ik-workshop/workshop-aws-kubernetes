@@ -31,6 +31,7 @@ EKS Kubernetes version 1.14 clusters, and clusters that were updated to versions
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
 | cluster\_oidc\_issuer\_url |  | string | n/a | yes |
+| oidc\_root\_ca\_thumbprint | Thumbprint of Root CA for EKS OIDC, Valid until 2037 | string | `"9e99a48a9960b14926bb7f3b02e22da2b0ab7280"` | no |
 
 ## Outputs
 
@@ -40,6 +41,6 @@ EKS Kubernetes version 1.14 clusters, and clusters that were updated to versions
 | openid\_connect\_provider\_arn |  |
 | openid\_connect\_provider\_uri | The URI of the identity provider. Corresponds to the iss claim. |
 | openid\_connect\_provider\_url | The URL of the identity provider. Corresponds to the iss claim. |
-| thumbprint | A server certificate thumbprints for the OpenID Connect \(OIDC\) identity provider's server certificate\(s\). |
+| thumbprint | A server certificate thumbprints for the OpenID Connect identity provider's server certificate. |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

@@ -13,16 +13,18 @@ Where infrastructrue currently deployed
 
 - [Terraform](https://github.com/hashicorp/terraform)
 - [Terragrunt](https://github.com/gruntwork-io/terragrunt)
+- [KubeCtl](https://github.com/kubernetes/kubectl)
 
 ## Quick start
 
 1. [Install Terraform 0.12 or newer](https://www.terraform.io/intro/getting-started/install.html)
 1. [Install Terragrunt 0.19 or newer](https://github.com/gruntwork-io/terragrunt#install-terragrunt)
+1. [Install KubeCtl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 1. Optionally, [install pre-commit hooks](https://pre-commit.com/#install) to keep Terraform formatting and documentation up-to-date.
 
 If you are using macOS you can install all dependencies using [Homebrew](https://brew.sh/):
 
-    $ brew bungle
+    $ brew bundle
 
 ## Configure access to AWS account
 
