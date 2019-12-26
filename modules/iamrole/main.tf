@@ -1,5 +1,5 @@
 resource aws_iam_role pod_identity {
-  name_prefix = "pod-iam-identity"
+  name = "pod-iam-identity"
 
   assume_role_policy = templatefile("${path.module}/templates/web-identity-role.json", {
     account_id      = var.target_account_id
@@ -11,4 +11,10 @@ resource aws_iam_role pod_identity {
   tags = {
     Workshop = "pod-identity"
   }
+}
+
+resource aws_iam_role_policy jpod_identity {
+  name   = "s3-access"
+  role   = aws_iam_role.pod_identity.id
+  policy = file("${path.module}/templates/s3.json")
 }
