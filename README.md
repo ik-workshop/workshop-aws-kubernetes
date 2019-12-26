@@ -6,6 +6,9 @@ This repository contains rather complete infrastructure configurations where Ter
 
 Where infrastructrue currently deployed
 
+## Link to Workshops
+
+
 ## Prerequisits
 
 - [Terraform](https://github.com/hashicorp/terraform)

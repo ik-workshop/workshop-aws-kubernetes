@@ -1,5 +1,5 @@
 terraform {
-  source = "/Users/ivankatliarchuk/source/self/workshop/workshop-kubernetes/modules/enable-oidc"
+  source = "${path_relative_from_include()}/../modules//enable-oidc"
 }
 
 # Include all settings from the root terragrunt.hcl file

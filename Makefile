@@ -25,7 +25,8 @@ create: ## Deploy multiple Terraform modules in a single command
 	@terragrunt apply-all
 
 destroy: ## Undeploy all the Terraform modules
-	@bin/test.sh
+	@cd master/us-east-1
+	@terragrunt destroy-all
 
 kubeconfig: ## Pull kubeconfig credentials for the cluster
 	@aws eks update-kubeconfig --name "workshop"
