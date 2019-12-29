@@ -6,8 +6,9 @@ This repository contains rather complete infrastructure configurations where Ter
 
 Where infrastructrue currently deployed
 
-## Link to Workshops
+## Publications
 
+- [Granting IAM roles to AWS EKS Service Accounts](https://medium.com/faun/granting-roles-to-aws-eks-service-accounts-470a312a7a19)
 
 ## Prerequisits
 
@@ -79,7 +80,7 @@ Most of the advantages described in [this article](https://blog.gruntwork.io/ter
 
 <!-- START makefile-doc -->
 ```
-$ make help 
+$ make help
 setup                          Setup dependencies
 hooks                          install pre commit.
 validate                       Validate files with pre-commit hooks
@@ -87,6 +88,6 @@ changelog                      Update changelog
 release                        Create release version
 create                         Deploy multiple Terraform modules in a single command
 destroy                        Undeploy all the Terraform modules
-kubeconfig                     Pull kubeconfig credentials for the cluster 
+kubeconfig                     Pull kubeconfig credentials for the cluster
 ```
 <!-- END makefile-doc -->
